@@ -1,0 +1,21 @@
+# --- Ambientes Virtuais (Virtual Envs) ---
+venv/
+.venv/
+env/
+ENV/
+
+# --- Python Bytecode (Arquivos compilados) ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# --- Variáveis de Ambiente (SEGURANÇA) ---
+.env
+.flaskenv
+
+# --- Arquivos de Configuração do IDE ---
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace 
