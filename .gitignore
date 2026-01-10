@@ -1,21 +1,62 @@
-# --- Ambientes Virtuais (Virtual Envs) ---
+# ========================
+# GERAL / SISTEMA
+# ========================
+.DS_Store
+Thumbs.db
+*.log
+
+# ========================
+# BACKEND (Python/Flask)
+# ========================
+
+# --- Ambientes Virtuais ---
 venv/
 .venv/
 env/
 ENV/
 
-# --- Python Bytecode (Arquivos compilados) ---
+# --- Python Bytecode ---
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
 
-# --- Variáveis de Ambiente (SEGURANÇA) ---
+# --- Banco de Dados Local (SQLite) ---
+*.db
+*.sqlite3
+
+# ========================
+# FRONTEND (React/Vite)
+# ========================
+
+# --- Dependências (NUNCA envie isso) ---
+node_modules/
+
+# --- Build de Produção (Vite gera a pasta dist) ---
+dist/
+build/
+
+# --- Logs de erro do Node ---
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# --- Diretórios de Teste/Coverage ---
+coverage/
+
+# ========================
+# SEGURANÇA & CONFIGURAÇÃO
+# ========================
+
+# --- Variáveis de Ambiente ---
 .env
+.env.local
+.env.*.local
 .flaskenv
 
 # --- Arquivos de Configuração do IDE ---
 .vscode/
 .idea/
 *.sublime-project
-*.sublime-workspace 
+*.sublime-workspace
